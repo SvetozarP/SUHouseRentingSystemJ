@@ -29,7 +29,7 @@ pipeline {
             steps {
                 script {
                     echo 'Building the project...'
-                    bat "dotnet build ${SOLUTION_FILE} --configuration Release --no-restore"
+                    bat "dotnet build ${SOLUTION_FILE} 
                 }
             }
         }
@@ -38,7 +38,7 @@ pipeline {
             steps {
                 script {
                     echo 'Running tests...'
-                    bat "dotnet test ${SOLUTION_FILE} --no-build --verbosity normal"
+                    bat "dotnet test ${SOLUTION_FILE} 
                 }
             }
         }
